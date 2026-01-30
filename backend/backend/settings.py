@@ -37,6 +37,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'api',
     'corsheaders',
     "django.contrib.admin",
@@ -79,7 +80,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "backend.wsgi.application"
-
+ASGI_APPLICATION = 'backend.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
@@ -150,3 +151,6 @@ STATIC_URL = "static/"
 
 REDIS_URL = os.getenv("REDIS_URL", default='localhost')
 KAFKA_BROKER_URL = os.getenv("KAFKA_BROKER_URL", default='localhost:9092')
+
+
+CORS_ALLOW_ALL_ORIGINS = True  # Only for development!
