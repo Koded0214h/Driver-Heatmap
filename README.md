@@ -1,9 +1,3 @@
-This README is where you explain that you didn't just build a "map"—you built a **high-throughput data pipeline**. Since you're skipping LeetCode to build actual systems, this README needs to scream "I understand scale."
-
-Here is a revamped, high-octane version of your README.
-
----
-
 # 🔥 Real-Time Driver Heatmap (Lagos)
 
 **Forget LeetCode; let's build systems.** This project is a full-stack, real-time geospatial visualization engine designed to handle high-concurrency driver pings and transform them into a live demand heatmap.
